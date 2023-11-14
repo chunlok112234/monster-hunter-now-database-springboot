@@ -1,0 +1,16 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ${JAVA_DATABASE_PASSWORD}
+    url: ${JDBC_CONN_STR}
+    username: ${JAVA_DATABASE_USERNAME}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
